@@ -1,0 +1,536 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        
+        <title>Смартфон Xiaomi</title>
+
+
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,700,900,700italic,500italic' rel='stylesheet' type='text/css'>
+
+
+
+
+
+
+
+		<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+		<link rel="stylesheet" href="{% static 'css/perfect-scrollbar.css' %}">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'css/flexslider.css' %}" type="text/css" media="screen"/>
+		<link rel="stylesheet" href="{% static 'css/fontello.css' %}">
+		<link rel="stylesheet" href="{% static 'css/jquery.fancybox.css' %}">
+   		<link rel="stylesheet" href="{% static 'css/animation.css' %}">
+		<link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+		<link rel="stylesheet" href="{% static 'css/owl.theme.css' %}">
+		<link rel="stylesheet" href="{% static 'css/chosen.css' %}">
+
+
+    </head>
+
+
+    <body>
+	{% block content %}
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Header -->
+			<header class="row">
+
+				<div class="col-lg-12 col-md-12 col-sm-12">
+
+					<!-- Top Header -->
+					<div id="top-header">
+
+						<div class="row">
+
+							<nav id="top-navigation" class="col-lg-7 col-md-7 col-sm-7">
+								<ul class="pull-left">
+									<li><a href="{% url 'text_page' %}">Про нас</a></li>
+									<li><a href="{% url 'contact' %}">Контакти</a></li>
+								</ul>
+							</nav>
+
+							<nav class="col-lg-5 col-md-5 col-sm-5">
+								<ul class="pull-right">
+									<li class="purple"><a href="#"><i class="icons icon-user-3"></i> Авторизація</a>
+
+									</li>
+									<li><a href="{% url 'auth_comments_app:create_account' %}"><i class="icons icon-lock"></i> Створити акаунт</a></li>
+								</ul>
+							</nav>
+
+						</div>
+
+					</div>
+					<!-- /Top Header -->
+
+
+
+					<!-- Main Header -->
+					<div id="main-header">
+
+						<div class="row">
+
+							<div id="logo" class="col-lg-4 col-md-4 col-sm-4">
+								<a href="{% url 'home' %}"><img src="{% static 'img/logo.png' %}" alt="Logo"></a>
+							</div>
+
+							<nav id="middle-navigation" class="col-lg-8 col-md-8 col-sm-8">
+								<ul class="pull-right">
+									<li class="orange"><a href="{% url 'order_info' %}"><i class="icons icon-basket-2"></i>0 товар</a></li>
+								</ul>
+							</nav>
+
+						</div>
+
+					</div>
+					<!-- /Main Header -->
+
+
+					<!-- Main Navigation -->
+					<nav id="main-navigation" class="style1">
+						<ul>
+
+							<li class="home-green">
+								<a href="{% url 'home' %}">
+									<i class="icons icon-shop-1"></i>
+									<span class="nav-caption">Головна</span>
+
+								</a>
+
+							</li>
+
+							<li class="blue">
+								<a href="{% url 'category' %}">
+									<i class="icons icon-desktop-3"></i>
+									<span class="nav-caption">Товари</span>
+
+								</a>
+							</li>
+
+							<li class="green">
+								<a href="{% url 'blog' %}">
+									<i class="icons icon-pencil-7"></i>
+									<span class="nav-caption">Блог</span>
+
+								</a>
+							</li>
+
+							<li class="purple">
+								<a href="{% url 'contact' %}">
+									<i class="icons icon-location-7"></i>
+									<span class="nav-caption">Контакти</span>
+
+								</a>
+							</li>
+
+
+						</ul>
+
+
+
+					</nav>
+					<!-- /Main Navigation -->
+
+				</div>
+
+			</header>
+			<!-- /Header -->
+
+
+			<!-- Content -->
+			<div class="row content">
+
+
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                	<div class="breadcrumbs">
+                    	<p>Головна<i class="icons icon-right-dir"></i>Товари<i class="icons icon-right-dir"></i>Смартфон Xiaomi Redmi Note 12</p>
+                    </div>
+                </div>
+
+
+				<!-- Main Content -->
+				<section class="main-content col-lg-12 col-md-12 col-sm-12">
+
+
+
+                    <!-- Product -->
+                    <div class="product-single">
+
+                        <div class="row">
+
+                            <!-- Product Images Carousel -->
+                            <div class="col-lg-4 col-md-4 col-sm-4 product-single-image">
+
+								<div id="product-slider">
+									<ul class="slides">
+										<li>
+											<img class="cloud-zoom" src="{% static 'img/products/single9.jpg' %}" data-large="{% static 'img/products/sample9.jpg' %}"  alt=""/>
+											<a class="fullscreen-button" href="{% static 'img/products/single9.jpg' %}">
+												<div class="product-fullscreen">
+													<i class="icons icon-resize-full-1"></i>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div id="product-carousel">
+									<ul class="slides">
+										<li>
+											<a class="fancybox" rel="product-images" href="{% static 'img/products/single9.jpg' %}"></a>
+											<img src="{% static 'img/products/single9.jpg' %}" data-large="{% static 'img/products/single9.jpg' %}" alt=""/>
+										</li>
+										<li>
+											<a class="fancybox" rel="product-images" href="{% static 'img/products/single10.jpg' %}"></a>
+											<img src="{% static 'img/products/single10.jpg' %}" data-large="{% static 'img/products/single10.jpg' %}" alt="" />
+										</li>
+										<li>
+											<a class="fancybox" rel="product-images" href="{% static 'img/products/single11.jpg' %}"></a>
+											<img src="{% static 'img/products/single11.jpg' %}" data-large="{% static 'img/products/single11.jpg' %}" alt="" />
+										</li>
+										<li>
+											<a class="fancybox" rel="product-images" href="{% static 'img/products/single12.jpg' %}"></a>
+											<img src="{% static 'img/products/single12.jpg' %}" data-large="{% static 'img/products/single12.jpg' %}" alt="" />
+										</li>
+										<li>
+											<a class="fancybox" rel="product-images" href="{% static 'img/products/single13.jpg"></a>
+											<img src="{% static 'img/products/single13.jpg' %}" data-large="{% static 'img/products/single13.jpg' %}" alt="" />
+										</li>
+										<li>
+											<a class="fancybox" rel="product-images" href="{% static 'img/products/single14.jpg"></a>
+											<img src="{% static 'img/products/single14.jpg' %}" data-large="{% static 'img/products/single14.jpg' %}" alt="" />
+										</li>
+									</ul>
+									<div class="product-arrows">
+										<div class="left-arrow">
+											<i class="icons icon-left-dir"></i>
+										</div>
+										<div class="right-arrow">
+											<i class="icons icon-right-dir"></i>
+										</div>
+									</div>
+								</div>
+                            </div>
+                            <!-- /Product Images Carousel -->
+
+                            <div class="col-lg-8 col-md-8 col-sm-8 product-single-info full-size">
+
+                                <h2>Смартфон Xiaomi Redmi Note 12 4/128Gb Onyx Gray</h2>
+
+                                <table>
+                                	<tr>
+                                    	<td>Код продукта</td>
+                                        <td>PBS173</td>
+                                    </tr>
+                                </table>
+                                <span class="price"><del>$240.00</del> $189.00</span>
+
+                                <table class="product-actions-single">
+                                	<tr>
+
+
+                                        <td>
+
+                                            <a href="#">
+                                                <span class="add-to-cart">
+                                                    <span class="action-wrapper">
+                                                        <i class="icons icon-basket-2"></i>
+                                                        <span class="action-name">Add to cart</span>
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- /Product -->
+
+
+                    <div class="row">
+
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+
+							<!-- Accordion -->
+							<div class="accordion">
+
+								<ul>
+									<!-- Item -->
+									<li>
+
+										<div class="accordion-header">
+											<h4>Короткий опис</h4>
+											<span class="accordion-button">
+												<i class="icons icon-plus-1"></i>
+											</span>
+										</div>
+										<div class="accordion-content page-content">
+
+											<p>Смартфон Xiaomi Redmi Note 12 оснащений потужним 8-ядерним процесором Snapdragon 685, він легко підтримує режим багатозадачності та справляється з будь-якими викликами. 6.67-дюймовий FHD+ AMOLED дисплей з частотою оновлення 120 Гц та кольоровим охопленням 100% DCI-P3 радує соковитими кольорами та чіткими деталями. Основна камера із 50-мегапіксельним модулем отримує чудові фото навіть за слабкого освітлення. Завдяки швидкій зарядці потужністю 33 Вт поповнити заряд батареї можна прямо перед виходом з дому.</p>
+<p>Ідеальні фотографії одним натисканням</p>
+<p>Потрійна основна камера знімає чудові фотографії за будь-яких обставин. Основний модуль 50 Мп з технологією large pixel(4-in-1) отримує чіткі та яскраві фото навіть в умовах поганого освітлення. Ультраширококутна камера 8 Мп з кутом огляду 120 градусів відповідає за створення чудових знімків зі складним ракурсом. Макросенсор 2 Мп створює чудові деталізовані знімки крупним планом.</p>
+<p>Яскравий безмежний екран</p>
+<p>6.67-дюймовий FHD+ AMOLED дисплей з охопленням кольорового спектру 100% DCI-P3 та піковою яскравістю 1200 нит відтворює чітке та деталізоване зображення, яке відмінно видно навіть при яскравому денному освітленні. У режимі читання дисплей ідеально підходить для читання великих текстів та роботи з документами. Сертифікація SGS Eye Care Display гарантує, що вашим очам не загрожує втома навіть після кількох годин перегляду.</p>
+<p>Плавні зображення. Швидкий відгук</p>
+<p>Завдяки частоті оновлення до 120 Гц та частоті дискретизації до 240 Гц ви зможете оцінити максимальну точність сенсорного керування та плавне відтворення будь-яких динамічних сцен. Інтелектуальні технології автоматично регулюють частоту оновлення, залежно від контенту. Це дозволяє більш економно витрачати ресурс батареї і гарантує чудовий користувальницький досвід.</p>
+<p>Не боїться зовнішніх впливів</p>
+<p>Корпус Xiaomi Redmi Note 12 має високий рівень пілоту вологозахисту за стандартом IP53, а це означає, що йому не страшні краплі дощу або бризки від розлитої рідини. Екран смартфона покритий склом Corning Gorilla Glass 3, яке захищає від мікроцарапин та відмінно переносить носіння в сумці чи кармані.</p>
+<p>Потужний процесор для безперебійної роботи</p>
+<p>6нм 8-ядерний процесор Snapdragon 685 з частотою до 2.8 ГГц забезпечує відмінну продуктивність смартфона, високу обчислювальну потужність та швидкодію. Redmi Note 12 легко справляється зі складними завданнями, вимогливими до ресурсів іграми та додатками. Пам'яті смартфона до 8 Гб/128 Гб вистачить для швидкого доступу до потрібних додатків та зберігання великої кількості інформації.</p>
+<p>Елегантний дизайн</p>
+<p>Смартфон Xiaomi Redmi Note 12 зручно лежить у руці завдяки плавним лініям, тонкому дизайну та продуманій ергономиці. Приємне на дотик покриття забезпечує комфортні тактильні відчуття при кожному використанні. Розкішні кольори на вибір підкреслюють елегантність та лаконічність фірмового стилю Redmi.</p>
+<p>Робота з ранку до вечора</p>
+<p>Ємна батарея на 5000 мАг забезпечує цілий день активного використання Redmi Note 12. Ви можете багато годин поспіль спілкуватися, грати, дивитися відео та серфіті в інтернеті. Для підзарядки батареї скористайтеся швидкою зарядкою потужністю 33 Вт, яка потребує всього півгодини, щоб поповнити заряд ще на кілька годин роботи смартфона.</p>
+
+										</div>
+
+									</li>
+									<!-- /Item -->
+
+
+									<!-- Item -->
+									<li>
+
+
+										<div class="accordion-content page-content">
+											<ul class="comments">
+
+
+												<li>
+											</ul>
+
+
+
+
+									</li>
+									<!-- /Item -->
+
+									<!-- Item -->
+									<li>
+										<div class="accordion-header">
+											<h4>Коментарі</h4>
+											<span class="accordion-button">
+												<i class="icons icon-plus-1"></i>
+											</span>
+										</div>
+										<div class="accordion-content page-content">
+											<ul class="comments">
+
+											</ul>
+											<div class="row">
+
+												<div class="col-lg-6 col-md-6 col-sm-8">
+
+    <ul>
+<ul>
+  {% for comment in comments %}
+    <li>
+      <strong>{{ comment.name }}</strong>
+      <p>{{ comment.text }}</p>
+      <p>Posted on: {{ comment.created_at }}</p>
+    </li>
+  {% empty %}
+    <li>No comments yet.</li>
+  {% endfor %}
+</ul>
+
+<h2>Add a New Comment</h2>
+<form method="post">
+  {% csrf_token %}
+  {{ comment_form.as_p }}
+  <button type="submit">Submit</button>
+</form>
+
+  </ul>
+
+
+
+
+												</div>
+											</div>
+													</div>
+
+
+
+									</li>
+									<!-- /Item -->
+
+								</ul>
+								<!-- /Accordion -->
+							</div>
+
+
+                        </div>
+
+                    </div>
+
+
+
+
+					<!-- Product Buttons -->
+					<div class="row button-row">
+
+						<div class="col-lg-5 col-md-5 col-sm-5">
+							<a class="button grey regular" href="{% url 'category' %}"><i class="icons icon-reply"></i> Назад до сторінки товарів</a>
+						</div>
+
+
+					</div>
+					<!-- /Product Buttons -->
+
+
+				</section>
+				<!-- /Main Content -->
+
+			</div>
+			<!-- /Content -->
+
+
+			<!-- Footer -->
+			<footer id="footer" class="row">
+
+
+
+				<!-- Main Footer -->
+				<div class="col-lg-12 col-md-12 col-sm-12">
+
+					<div id="main-footer">
+
+						<div class="row">
+
+							<!-- Contact Us -->
+							<div class="col-lg-3 col-md-3 col-sm-6 contact-footer-info">
+								<h4>Контакти</h4>
+								<ul>
+									<li><i class="icons icon-phone"></i> +1111111111</li>
+									<li><i class="icons icon-mail-alt"></i><a href="mailto:mail@company.com"> mail@test.com</a></li>
+
+								</ul>
+
+                                <!-- Social Media -->
+                                <div class="social-media">
+                                    <ul>
+                                        <li class="social-facebook tooltip-hover" data-toggle="tooltip" data-placement="top" title="Facebook"><a href="https://www.facebook.com/"></a></li>
+                                        <li class="social-pinterest tooltip-hover" data-toggle="tooltip" data-placement="top" title="Pinterest"><a href="https://pinterest.com/"></a></li>
+                                        <li class="social-youtube tooltip-hover" data-toggle="tooltip" data-placement="top" title="Youtube"><a href="https://youtube.com"></a></li>
+                                    </ul>
+                                </div>
+                                <!-- /Social Media -->
+                                
+							</div>
+							<!-- /Contact Us -->
+							
+							
+
+							
+						</div>
+						
+					</div>
+					
+				</div>
+				<!-- /Main Footer -->
+				
+				
+				
+				<!-- Lower Footer -->
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					
+					<div id="lower-footer">
+					
+						<div class="row">
+							
+							<div class="col-lg-6 col-md-6 col-sm-6">
+								<p class="copyright">Copyright 2023 <a href="#">HomeShop</a>. All Rights Reserved.</p>
+							</div>
+							
+							<div class="col-lg-6 col-md-6 col-sm-6">
+								<ul class="payment-list">
+									<li class="payment1"></li>
+									<li class="payment2"></li>
+									<li class="payment3"></li>
+									<li class="payment4"></li>
+									<li class="payment5"></li>
+								</ul>
+							</div>
+							
+						</div>
+						
+					</div>
+					
+				</div>
+				<!-- /Lower Footer -->
+				
+			</footer>
+			<!-- Footer -->
+			
+            
+            <div id="back-to-top">
+            	<i class="icon-up-dir"></i>
+            </div>
+            
+		</div>
+    	<!-- Container -->
+		
+		
+		
+	<!-- JavaScript -->
+		<script src="{% static 'js/modernizr.min.js' %}"></script>
+		<script src="{% static 'js/jquery-1.11.0.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'js/jquery-ui.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/jquery.raty.min.js' %}"></script>
+
+		<!-- Scroll Bar -->
+		<script src="{% static 'js/perfect-scrollbar.min.js' %}"></script>
+
+		<!-- Cloud Zoom -->
+		<script src="{% static 'js/zoomsl-3.0.min.js' %}"></script>
+
+		<!-- FancyBox -->
+		<script src="{% static 'js/jquery.fancybox.pack.js' %}"></script>
+
+		<!-- jQuery REVOLUTION Slider  -->
+		<script type="text/javascript" src="{% static 'js/jquery.themepunch.plugins.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'js/jquery.themepunch.revolution.min.js' %}"></script>
+
+		<!-- FlexSlider -->
+		<script defer src="{% static 'js/flexslider.min.js' %}"></script>
+
+		<!-- IOS Slider -->
+		<script src = "{% static 'js/jquery.iosslider.min.js' %}"></script>
+
+		<!-- noUi Slider -->
+		<script src="{% static 'js/jquery.nouislider.min.js' %}"></script>
+
+		<!-- Owl Carousel -->
+		<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+
+		<!-- Cloud Zoom -->
+		<script src="{% static 'js/zoomsl-3.0.min.js' %}"></script>
+
+		<!-- SelectJS -->
+        <script src="{% static 'js/chosen.jquery.min.js' %}" type="text/javascript"></script>
+
+        <!-- Main JS -->
+        <script defer src="{% static 'js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'js/main-script.js' %}"></script>
+        
+
+	{% endblock content %}
+    </body>
+    
+</html>

@@ -1,0 +1,522 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        
+        <title>Системный блок Expert</title>
+
+
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,700,900,700italic,500italic' rel='stylesheet' type='text/css'>
+
+
+
+
+
+
+
+		<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+		<link rel="stylesheet" href="{% static 'css/perfect-scrollbar.css' %}">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'css/flexslider.css' %}" type="text/css" media="screen"/>
+		<link rel="stylesheet" href="{% static 'css/fontello.css' %}">
+		<link rel="stylesheet" href="{% static 'css/jquery.fancybox.css' %}">
+   		<link rel="stylesheet" href="{% static 'css/animation.css' %}">
+		<link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+		<link rel="stylesheet" href="{% static 'css/owl.theme.css' %}">
+		<link rel="stylesheet" href="{% static 'css/chosen.css' %}">
+
+
+    </head>
+
+
+    <body>
+	{% block content %}
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Header -->
+			<header class="row">
+
+				<div class="col-lg-12 col-md-12 col-sm-12">
+
+					<!-- Top Header -->
+					<div id="top-header">
+
+						<div class="row">
+
+							<nav id="top-navigation" class="col-lg-7 col-md-7 col-sm-7">
+								<ul class="pull-left">
+									<li><a href="{% url 'text_page' %}">Про нас</a></li>
+									<li><a href="{% url 'contact' %}">Контакти</a></li>
+								</ul>
+							</nav>
+
+							<nav class="col-lg-5 col-md-5 col-sm-5">
+								<ul class="pull-right">
+									<li class="purple"><a href="#"><i class="icons icon-user-3"></i> Авторизація</a>
+
+									</li>
+									<li><a href="{% url 'auth_comments_app:create_account' %}"><i class="icons icon-lock"></i> Створити акаунт</a></li>
+								</ul>
+							</nav>
+
+						</div>
+
+					</div>
+					<!-- /Top Header -->
+
+
+
+					<!-- Main Header -->
+					<div id="main-header">
+
+						<div class="row">
+
+							<div id="logo" class="col-lg-4 col-md-4 col-sm-4">
+								<a href="{% url 'home' %}"><img src="{% static 'img/logo.png' %}" alt="Logo"></a>
+							</div>
+
+							<nav id="middle-navigation" class="col-lg-8 col-md-8 col-sm-8">
+								<ul class="pull-right">
+									<li class="orange"><a href="{% url 'order_info' %}"><i class="icons icon-basket-2"></i>0 товар</a></li>
+								</ul>
+							</nav>
+
+						</div>
+
+					</div>
+					<!-- /Main Header -->
+
+
+					<!-- Main Navigation -->
+					<nav id="main-navigation" class="style1">
+						<ul>
+
+							<li class="home-green">
+								<a href="{% url 'home' %}">
+									<i class="icons icon-shop-1"></i>
+									<span class="nav-caption">Головна</span>
+
+								</a>
+
+							</li>
+
+							<li class="blue">
+								<a href="{% url 'category' %}">
+									<i class="icons icon-desktop-3"></i>
+									<span class="nav-caption">Товари</span>
+
+								</a>
+							</li>
+
+							<li class="green">
+								<a href="{% url 'blog' %}">
+									<i class="icons icon-pencil-7"></i>
+									<span class="nav-caption">Блог</span>
+
+								</a>
+							</li>
+
+							<li class="purple">
+								<a href="{% url 'contact' %}">
+									<i class="icons icon-location-7"></i>
+									<span class="nav-caption">Контакти</span>
+
+								</a>
+							</li>
+
+
+						</ul>
+
+
+
+					</nav>
+					<!-- /Main Navigation -->
+
+				</div>
+
+			</header>
+			<!-- /Header -->
+
+
+			<!-- Content -->
+			<div class="row content">
+
+
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                	<div class="breadcrumbs">
+                    	<p>Головна<i class="icons icon-right-dir"></i>Товари<i class="icons icon-right-dir"></i>Системный блок Expert</p>
+                    </div>
+                </div>
+
+
+				<!-- Main Content -->
+				<section class="main-content col-lg-12 col-md-12 col-sm-12">
+
+
+
+                    <!-- Product -->
+                    <div class="product-single">
+
+                        <div class="row">
+
+                            <!-- Product Images Carousel -->
+                            <div class="col-lg-4 col-md-4 col-sm-4 product-single-image">
+
+								<div id="product-slider">
+									<ul class="slides">
+										<li>
+											<img class="cloud-zoom" src="{% static 'img/products/single20.jpg' %}" data-large="{% static 'img/products/sample20.jpg' %}"  alt=""/>
+											<a class="fullscreen-button" href="{% static 'img/products/single20.jpg' %}">
+												<div class="product-fullscreen">
+													<i class="icons icon-resize-full-1"></i>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div id="product-carousel">
+									<ul class="slides">
+										<li>
+											<a class="fancybox" rel="product-images" href="{% static 'img/products/single20.jpg' %}"></a>
+											<img src="{% static 'img/products/single20.jpg' %}" data-large="{% static 'img/products/single20.jpg' %}" alt=""/>
+										</li>
+										<li>
+											<a class="fancybox" rel="product-images" href="{% static 'img/products/single21.jpg' %}"></a>
+											<img src="{% static 'img/products/single21.jpg' %}" data-large="{% static 'img/products/single21.jpg' %}" alt="" />
+										</li>
+										<li>
+											<a class="fancybox" rel="product-images" href="{% static 'img/products/single22.jpg' %}"></a>
+											<img src="{% static 'img/products/single22.jpg' %}" data-large="{% static 'img/products/single22.jpg' %}" alt="" />
+										</li>
+										<li>
+											<a class="fancybox" rel="product-images" href="{% static 'img/products/single23.jpg' %}"></a>
+											<img src="{% static 'img/products/single23.jpg' %}" data-large="{% static 'img/products/single23.jpg' %}" alt="" />
+										</li>
+
+									</ul>
+									<div class="product-arrows">
+										<div class="left-arrow">
+											<i class="icons icon-left-dir"></i>
+										</div>
+										<div class="right-arrow">
+											<i class="icons icon-right-dir"></i>
+										</div>
+									</div>
+								</div>
+                            </div>
+                            <!-- /Product Images Carousel -->
+
+                            <div class="col-lg-8 col-md-8 col-sm-8 product-single-info full-size">
+
+                                <h2>Системный блок Expert PC Ultimate (A3600.16.S10.3050.A6100)</h2>
+
+                                <table>
+                                	<tr>
+                                    	<td>Код продукта</td>
+                                        <td>PBS173</td>
+                                    </tr>
+                                </table>
+                                <span class="price"><del>$900.00</del> $758.00</span>
+
+                                <table class="product-actions-single">
+                                	<tr>
+
+
+                                        <td>
+
+                                            <a href="#">
+                                                <span class="add-to-cart">
+                                                    <span class="action-wrapper">
+                                                        <i class="icons icon-basket-2"></i>
+                                                        <span class="action-name">Add to cart</span>
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- /Product -->
+
+
+                    <div class="row">
+
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+
+							<!-- Accordion -->
+							<div class="accordion">
+
+								<ul>
+									<!-- Item -->
+									<li>
+
+										<div class="accordion-header">
+											<h4>Короткий опис</h4>
+											<span class="accordion-button">
+												<i class="icons icon-plus-1"></i>
+											</span>
+										</div>
+										<div class="accordion-content page-content">
+											<p>Компанія Expert PC пропонує геймерську лінійку персональних комп'ютерів Expert PC Ultimate. Ця лінійка потужних ігрових комп'ютерів для геймерів та ентузіастів! Expert PC Ultimate поєднує у собі високу продуктивність, потужність та сучасні технології.</p>
+<p>Ультра графіка NVIDIA/AMD</p>
+<p>Топові відеокарти NVIDIA/AMD забезпечать максимальну та безкомпромісну продуктивність у найвибагливіших іграх та додатках. Ігри в ультра налаштуваннях графіки – тепер ти зможеш побачити світ сучасних ігор очима розробників, оцінити їх так, як вони були задумані, а не миритися та підлаштовуватись.</p>
+<p>Топові процесори</p>
+<p>Лінійка процесорів нового покоління – верх продуктивності та приємний запас для комфортної роботи з великими масивами даних, складними іграми, обробкою великих обсягів мультимедіа контенту. Безпрецедентна потужність, і малий час відгуку разом із вбудованими засобами безпеки дозволяють працювати, грати та створювати контент так швидко та так ефективно, як ви захочете.</p>
+<p>Абсолютна міць твого ПК від Expert PC</p>
+<p>Ігрові комп'ютери серії Ultimate з максимальною конфігурацією зібрані спеціально для просунутих користувачів і вимогливих до якості графіки геймерів. Дана лінійка дозволить насолодитися ультра налаштуваннями графіки та максимальною роздільною здатністю у всіх сучасних іграх, зберігаючи максимально доступні показники FPS. Кращого просто не існує!</p>
+<p>ПК Expert PC збираються на базі комплектуючих визнаних світових лідерів, таких як Intel, ASUS, Zalman, ProLogix, Seagate, Toshiba, Hitachi, AMD, Transcend, Kingston та ін.</p>
+<p>Професійне складання комп'ютера Expert PC забезпечить оптимальний повітряний потік усередині корпусу, а значить і відмінне охолодження всіх компонентів ПК.</p>
+
+										</div>
+
+									</li>
+									<!-- /Item -->
+
+
+									<!-- Item -->
+									<li>
+
+
+										<div class="accordion-content page-content">
+											<ul class="comments">
+
+
+												<li>
+											</ul>
+
+
+
+
+									</li>
+									<!-- /Item -->
+
+									<!-- Item -->
+									<li>
+										<div class="accordion-header">
+											<h4>Коментарі</h4>
+											<span class="accordion-button">
+												<i class="icons icon-plus-1"></i>
+											</span>
+										</div>
+										<div class="accordion-content page-content">
+											<ul class="comments">
+
+											</ul>
+											<div class="row">
+
+												<div class="col-lg-6 col-md-6 col-sm-8">
+
+    <ul>
+<ul>
+  {% for comment in comments %}
+    <li>
+      <strong>{{ comment.name }}</strong>
+      <p>{{ comment.text }}</p>
+      <p>Posted on: {{ comment.created_at }}</p>
+    </li>
+  {% empty %}
+    <li>No comments yet.</li>
+  {% endfor %}
+</ul>
+
+<h2>Add a New Comment</h2>
+<form method="post">
+  {% csrf_token %}
+  {{ comment_form.as_p }}
+  <button type="submit">Submit</button>
+</form>
+
+  </ul>
+
+
+
+
+												</div>
+											</div>
+													</div>
+
+
+
+									</li>
+									<!-- /Item -->
+
+								</ul>
+								<!-- /Accordion -->
+							</div>
+
+
+                        </div>
+
+                    </div>
+
+
+
+
+					<!-- Product Buttons -->
+					<div class="row button-row">
+
+						<div class="col-lg-5 col-md-5 col-sm-5">
+							<a class="button grey regular" href="{% url 'category' %}"><i class="icons icon-reply"></i> Назад до сторінки товарів</a>
+						</div>
+
+
+					</div>
+					<!-- /Product Buttons -->
+
+
+				</section>
+				<!-- /Main Content -->
+
+			</div>
+			<!-- /Content -->
+
+
+			<!-- Footer -->
+			<footer id="footer" class="row">
+
+
+
+				<!-- Main Footer -->
+				<div class="col-lg-12 col-md-12 col-sm-12">
+
+					<div id="main-footer">
+
+						<div class="row">
+
+							<!-- Contact Us -->
+							<div class="col-lg-3 col-md-3 col-sm-6 contact-footer-info">
+								<h4>Контакти</h4>
+								<ul>
+									<li><i class="icons icon-phone"></i> +1111111111</li>
+									<li><i class="icons icon-mail-alt"></i><a href="mailto:mail@company.com"> mail@test.com</a></li>
+
+								</ul>
+
+                                <!-- Social Media -->
+                                <div class="social-media">
+                                    <ul>
+                                        <li class="social-facebook tooltip-hover" data-toggle="tooltip" data-placement="top" title="Facebook"><a href="https://www.facebook.com/"></a></li>
+                                        <li class="social-pinterest tooltip-hover" data-toggle="tooltip" data-placement="top" title="Pinterest"><a href="https://pinterest.com/"></a></li>
+                                        <li class="social-youtube tooltip-hover" data-toggle="tooltip" data-placement="top" title="Youtube"><a href="https://youtube.com"></a></li>
+                                    </ul>
+                                </div>
+                                <!-- /Social Media -->
+                                
+							</div>
+							<!-- /Contact Us -->
+							
+							
+
+							
+						</div>
+						
+					</div>
+					
+				</div>
+				<!-- /Main Footer -->
+				
+				
+				
+				<!-- Lower Footer -->
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					
+					<div id="lower-footer">
+					
+						<div class="row">
+							
+							<div class="col-lg-6 col-md-6 col-sm-6">
+								<p class="copyright">Copyright 2023 <a href="#">HomeShop</a>. All Rights Reserved.</p>
+							</div>
+							
+							<div class="col-lg-6 col-md-6 col-sm-6">
+								<ul class="payment-list">
+									<li class="payment1"></li>
+									<li class="payment2"></li>
+									<li class="payment3"></li>
+									<li class="payment4"></li>
+									<li class="payment5"></li>
+								</ul>
+							</div>
+							
+						</div>
+						
+					</div>
+					
+				</div>
+				<!-- /Lower Footer -->
+				
+			</footer>
+			<!-- Footer -->
+			
+            
+            <div id="back-to-top">
+            	<i class="icon-up-dir"></i>
+            </div>
+            
+		</div>
+    	<!-- Container -->
+		
+		
+		
+	<!-- JavaScript -->
+		<script src="{% static 'js/modernizr.min.js' %}"></script>
+		<script src="{% static 'js/jquery-1.11.0.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'js/jquery-ui.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/jquery.raty.min.js' %}"></script>
+
+		<!-- Scroll Bar -->
+		<script src="{% static 'js/perfect-scrollbar.min.js' %}"></script>
+
+		<!-- Cloud Zoom -->
+		<script src="{% static 'js/zoomsl-3.0.min.js' %}"></script>
+
+		<!-- FancyBox -->
+		<script src="{% static 'js/jquery.fancybox.pack.js' %}"></script>
+
+		<!-- jQuery REVOLUTION Slider  -->
+		<script type="text/javascript" src="{% static 'js/jquery.themepunch.plugins.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'js/jquery.themepunch.revolution.min.js' %}"></script>
+
+		<!-- FlexSlider -->
+		<script defer src="{% static 'js/flexslider.min.js' %}"></script>
+
+		<!-- IOS Slider -->
+		<script src = "{% static 'js/jquery.iosslider.min.js' %}"></script>
+
+		<!-- noUi Slider -->
+		<script src="{% static 'js/jquery.nouislider.min.js' %}"></script>
+
+		<!-- Owl Carousel -->
+		<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+
+		<!-- Cloud Zoom -->
+		<script src="{% static 'js/zoomsl-3.0.min.js' %}"></script>
+
+		<!-- SelectJS -->
+        <script src="{% static 'js/chosen.jquery.min.js' %}" type="text/javascript"></script>
+
+        <!-- Main JS -->
+        <script defer src="{% static 'js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'js/main-script.js' %}"></script>
+        
+
+	{% endblock content %}
+    </body>
+    
+</html>
